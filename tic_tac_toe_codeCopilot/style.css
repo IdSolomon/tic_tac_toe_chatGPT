@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #caebb2;
+}
+
+.small_heading {
+  font-family: 'Hanalei Fill';
+  font-size: 30px;
+  font-variant: small-caps;
+  margin-bottom: -60px;
+}
+
+h1 {
+  font-family: 'Bungee Shade';
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 130px); /* Increased by 30% */
+  grid-gap: 12px; /* Increased by 30% */
+  background: linear-gradient(140deg, #8993ff 5%, #0a5c36 70%);
+  padding: 42px; /* Increased by 30% */
+  box-shadow: 12px 15px 20px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.cell {
+  width: 130px; /* Increased by 30% */
+  height: 130px; /* Increased by 30% */
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+  transition: 0.5s;
+  font-size: 5.2em; /* Increased by 30% */
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.cell:hover {
+background-color: #1c1c84;
+}
+
+.cell:active {
+background-color: #3e8e41;
+box-shadow: 0 4px #666;
+transform: translateY(4px);
+}
+
+#resetButton {
+  font-family: 'Hanalei Fill';
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 3em;
+  color: #fff;
+  background-color: #ff0000;
+  border-radius: 40px;
+  box-shadow: 0 9px #999;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#resetButton:hover {
+background-color: #3e8e41;
+}
+
+#resetButton:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
